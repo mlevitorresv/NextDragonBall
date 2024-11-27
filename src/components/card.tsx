@@ -6,7 +6,7 @@ export default function Card(props: CardInterface) {
         <div className="relative group w-64 h-80">
             {/* Imagen de fondo */}
             <div
-                className="w-full h-full bg-cover bg-center rounded-lg"
+                className="w-full h-full bg-cover rounded-lg"
                 style={{ backgroundImage: `url(${props.image})` }}
             ></div>
 
