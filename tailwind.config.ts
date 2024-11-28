@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        esteban: ['Esteban', 'serif'],
+        kaushan: ['Kaushan Script', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
