@@ -23,7 +23,7 @@ export default function DivCardsContainer() {
     if (error) return <div>Error loading data</div>;
 
     return (
-        <div className='w-full h-full flex flex-wrap justify-around p-8 bg-orange-500'>
+        <div className='w-full h-full flex flex-wrap justify-around p-8'>
             {data.items.map((character: any, index: number) => (
                 <Card
                     key={index}
