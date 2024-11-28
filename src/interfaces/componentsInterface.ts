@@ -13,3 +13,7 @@ export interface CardInterface{
     maxKi: String,
     affiliation: String
 }
+
+export interface ParagraphAvgInterface{
+    texts: String[]
+}
