@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Card(props: CardInterface) {
     return (
-        <div className="relative group w-64 h-80">
+        <div className="relative group w-64 h-80 my-8">
             {/* Imagen de fondo */}
             <div
                 className="w-full h-full bg-cover rounded-lg"
