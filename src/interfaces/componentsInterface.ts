@@ -15,5 +15,5 @@ export interface CardInterface{
 }
 
 export interface ParagraphAvgInterface{
-    texts: String[]
+    texts?: String[]
 }
