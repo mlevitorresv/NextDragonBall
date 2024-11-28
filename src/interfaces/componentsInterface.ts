@@ -15,5 +15,6 @@ export interface CardInterface{
 }
 
 export interface ParagraphAvgInterface{
-    texts?: String[]
+    texts?: String[],
+    children?: React.ReactNode
 }

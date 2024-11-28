@@ -1,9 +1,9 @@
 'use client'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import DivCardsContainer from "@/components/divCardsContainer";
 import Header from "@/components/header";
 import ParagraphAvg from '@/components/paragraphAvg';
+import Link from 'next/link';
 
 const queryClient = new QueryClient();
 
@@ -17,6 +17,9 @@ export default function Home() {
     <>
       <Header />
       <ParagraphAvg texts={texts} />
+      <ParagraphAvg>
+        <Link href={'/characters'} className='text-white'>👉Conocer personajes</Link>
+      </ParagraphAvg>
     </>
 
   );
