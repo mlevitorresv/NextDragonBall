@@ -2,9 +2,8 @@
 
 import React from 'react'
 import { useQuery } from '@tanstack/react-query';
-import { CardInterface } from '@/interfaces/componentsInterface';
 import Card from './card';
-import characters from '@/app/characters/page';
+import { CardInterface } from '@/interfaces/componentsInterface';
 
 
 async function fetchData() {
@@ -18,16 +17,14 @@ export default function DivCardsContainer() {
         queryFn: fetchData
     });
 
-    console.log('Data:', data); // Aquí puedes inspeccionar la respuesta de la API
-
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading data</div>;
 
     return (
         <div className='w-full h-full flex flex-wrap justify-around p-8'>
-            {data.items.map((character: any, index: number) => {
+            {data.items.map((character: CardInterface, index: number) => {
 
-                let imageUrl = character.image
+                const imageUrl = character.image
                 if(!imageUrl.includes(' ')){
                     return (
                         <Card
