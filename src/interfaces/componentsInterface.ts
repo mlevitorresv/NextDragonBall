@@ -1,20 +1,20 @@
 
 
 export interface TitleInterface{
-    text: String
+    text: string
 }
 
 export interface CardInterface{
-    image: String,
-    name: String,
-    race: String,
-    gender: String,
-    ki: String,
-    maxKi: String,
-    affiliation: String
+    image: string,
+    name: string,
+    race: string,
+    gender: string,
+    ki: string,
+    maxKi: string,
+    affiliation: string
 }
 
 export interface ParagraphAvgInterface{
-    texts?: String[],
+    texts?: string[],
     children?: React.ReactNode
 }
