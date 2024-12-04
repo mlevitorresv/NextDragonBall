@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '@/components/title'
+import Title from './title'
 import Link from 'next/link'
 
 export default function Header() {
